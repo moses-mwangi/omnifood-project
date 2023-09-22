@@ -170,6 +170,27 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 /********************************************/
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
 .section-how {
   padding: 9.6rem 0;
 }
@@ -244,4 +265,116 @@ body {
 }
 .grid--center-v {
   align-items: center;
+}
+.section-meals {
+  padding: 9.6rem 0;
+}
+.center-text {
+  text-align: center;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translatey(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+strong {
+  font-weight: 500;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.margin-bottom-mb {
+  margin-bottom: 4.8rem !important;
+}
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 2px;
+  transition: 0.5s;
+}
+.link:hover,
+.link:active {
+  color: #b8651b;
+  border-bottom: 2px solid transparent;
+}
+.section-testimonials {
+  padding: 9.6rem 0;
 }
