@@ -9,11 +9,13 @@ html {
   /* font-size: 10px; */
   /* 10px/16px=o.625=62.5% */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 .logo {
   height: 2.2rem;
@@ -25,11 +27,12 @@ body {
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .main-nav-list {
   display: flex;
   list-style: none;
-  gap: 3.2rem;
+  gap: rem;
   align-items: center;
 }
 .main-nav-link:link,
@@ -97,11 +100,7 @@ body {
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
-}
-@media (max-width: 1200px) {
-  .section-hero {
-    background-color: red;
-  }
+  /* margin-bottom: 4rem; */
 }
 .hero {
   max-width: 130rem;
@@ -159,6 +158,22 @@ body {
   color: #e67e22;
   font-weight: 700;
 }
+/*****************************/
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+/***************************/
 /********************************************/
 .container {
   max-width: 120rem;
@@ -366,25 +381,9 @@ strong {
   font-weight: 500;
 }
 .meal-content {
-  padding: 3.2rem 4.8rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
+
 .margin-bottom-mb {
   margin-bottom: 4.8rem !important;
 }
@@ -409,7 +408,7 @@ strong {
 /**************************************/
 .section-testimonials
 /**************************************/
-.section-testimonials {
+ .section-testimonials {
   background-color: #fdf2e9;
   display: grid;
   grid-template-columns: 55fr 45fr;
@@ -494,6 +493,23 @@ strong {
   color: #333;
   background-color: #ffd43b;
   padding: 0.8rem 8rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 .plan-name {
   color: #b8651b;
